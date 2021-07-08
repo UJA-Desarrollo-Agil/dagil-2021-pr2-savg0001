@@ -68,11 +68,40 @@ undum.game.situations = {
 
     /*Elijo ir a comprar*/
     comprar: new undum.SimpleSituation(
+        "<p>Ya en la calle, cambiado y aseado afronto mi intrepidante camino hacia el Mercadona que está a 10 minutos de casa, pero de repente algo acapara toda mi atención. ¡La churrería del barrio está abierta!</p>\
+        <p>Como durante la semana toca ir virtualmente a clase y los findes son para descansar pensaba que eso de la churrería abierta era un mito. Esto puede que cambie mis planes, <a href='siChurros'>¿decido hacer una paradita para comprar churros</a> <a href='noChurros'>continúo mi aburrido camino sin churros al mercadona</a>.</p>",
+        {
+            heading: "Se ha roto un mito",
+        }
+    ),
 
-    )
+    /*Elijo comprar churros*/
+    siChurros: new undum.SimpleSituation(
+        ""
+    ),
+    
+    /*Elijo no comprar churros y voy al Mercadona*/
+    noChurros: new undum.SimpleSituation(
+        "<p>Me los merezco, y además ya es demasiado tarde como para empezar la operación bikini, allá que voy.</p>\
+        <p>Cuando llego algo extraño oigo</p>\
+        <p><a href='detalladamente_churreria'>Escuchar detalladamente la conversación</a>.</p>\
+        <p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='irCasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irMercadonaFin'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.",
+    ),
 
-
-
+  /*Mirar detalladamente el campamento*/
+  detalladamente_campamento: new undum.SimpleSituation(
+    "<p>veo que hay un tirador con arco y flechas de piedra.</p>\
+        <p><a href='campamento2'>Continuar con la historia</a></p>",
+    {
+      heading: "Tras mirar detalladamente ...",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 3
+        );
+      },
+    }
+  ),
 
 
 
