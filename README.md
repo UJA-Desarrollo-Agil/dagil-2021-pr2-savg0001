@@ -6,7 +6,7 @@
 
 Vico Guzmán, Sebastián Alberto - _savg0001@red.uajen.es_.
 
-3º Ingeniería del software - Ingeniería informática.
+Grado en Ingeniería informática, Universidad de Jaén.
 
 ## Índice
 
