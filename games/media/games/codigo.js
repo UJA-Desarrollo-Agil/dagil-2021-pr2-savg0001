@@ -52,12 +52,24 @@ undum.game.situations = {
         <p>Solo hay unas latas de cerveza y un plato de macarrones que sobraron de ayer aunque es extraño que sobrasen con lo que me gustan...</p>\
         <p> <a href='macarrones>Bah, desayuno los macarrones y que pase lo que tenga que pasar</a> <a href='comprar'>toca ir a comprar algo que pegue más a estas horas</a>.</p>",
         {
-            heading: Hora de abrir el frigo...
+            heading: "Hora de abrir el frigo...",
         }
     ),
 
+    /*Elijo desayunar los macarrones*/
+    macarrones: new undum.SimpleSituation(
+        "<p>Ahora recuerdo por qué me sobraron tantos macarrones, agotado por el estudio del último examen confundí la sal con el azúcar y no son para nada apetecibles...¡Vaya desastre!</p>\
+         <p>Supongo que una retirada a tiempo siempre es una victoria así que ahora sí que sí, <a href='comprar'>AL MERCADONAAAAA</a>.</p>",
+         {
+             heading: "¿Cómo puede ser que dos cosas tan parecidas sepan tan diferente?",
+         }
 
+    ),
 
+    /*Elijo ir a comprar*/
+    comprar: new undum.SimpleSituation(
+
+    )
 
 
 
