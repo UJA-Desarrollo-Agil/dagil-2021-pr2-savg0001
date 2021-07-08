@@ -85,24 +85,21 @@ undum.game.situations = {
         "<p>Me los merezco, y además ya es demasiado tarde como para empezar la operación bikini, allá que voy.</p>\
         <p>Cuando llego algo extraño oigo</p>\
         <p><a href='detalladamente_churreria'>Escuchar detalladamente la conversación</a>.</p>\
-        <p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='irCasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irMercadonaFin'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.",
+        <p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='irCasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irMercadonaFin'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.</p>",
     ),
 
   /*Mirar detalladamente el campamento*/
-  detalladamente_campamento: new undum.SimpleSituation(
-    "<p>veo que hay un tirador con arco y flechas de piedra.</p>\
-        <p><a href='campamento2'>Continuar con la historia</a></p>",
-    {
-      heading: "Tras mirar detalladamente ...",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 3
-        );
-      },
-    }
+  detalladamente_churros: new undum.SimpleSituation(
+       "<p>Creo que tengo el oido algo tocado también debido al cansancio del estudio, simplemente era una anciana pidiendo la vez.</p>\
+        <p><a href='seguir'>Dejo de escuchar y me centro en comprar</a></p>",
+       {
+      heading: "Tras escuchar detalladamente ...",
+       }
   ),
 
+  seguir: new undum.SimpleSituation(
+       "<p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='irCasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irMercadonaFin'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.</p>",
+  )
 
 
 
