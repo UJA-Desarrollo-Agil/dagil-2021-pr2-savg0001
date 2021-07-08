@@ -43,7 +43,7 @@ Grado en Ingeniería informática, Universidad de Jaén.
 
 ## 3.1. Product Backlog al comienzo
 
-![Captura1](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/PBacklogordenado1.PNG)
+![Captura1](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/PBacklogordenado.PNG)
 
 _Captura del tablero de Trello al iniciar la práctica (1/2)_
 
@@ -57,8 +57,8 @@ _Captura del tablero de Trello al iniciar la práctica (2/2)_
 
 ![Captura3](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/VinculadoTrello.PNG)
 
-_Captura de Telegram: vinculado Trello_
+_Captura de Telegram: Trello vinculado_
 
 ![Captura4](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/VinculadoGitHub.PNG)
 
-_Captura del Telegram: Vinculado GitHub_
+_Captura del Telegram: GitHub vinculado_
