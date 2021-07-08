@@ -75,32 +75,60 @@ undum.game.situations = {
         }
     ),
 
-    /*Elijo comprar churros*/
-    siChurros: new undum.SimpleSituation(
-        ""
+    /*Elijo no comprar churros*/ 
+    noChurros: new undum.SimpleSituation(
+        "<p>Mejor no compro churros, tengo que mantener la línea porque ¡ya es verano! Así que sigo mi camino hacia el mercadona pero antes veo algo raro en la calle.</p>\
+        <p><a href='detalladamente_calle'>Mirar detalladamente que pasa</a>.</p>\
+        <p><a href='irMercadonaFin'>Sigo mi camino hacia el mercadona, que estoy apunto de llegar</a></p>",
+        {
+            heading: "No me apetecen churros",
+        }
+
+    ),
+
+    /*Mirar detalladamente calle*/
+    detalladamente_churros: new undum.SimpleSituation(
+        "<p>No veo demasiado bien debido al cansancion por el estudio, simplemete era una hoja bailando por el viento.</p>\
+        <p><a href='irMercadonaFin'>Dejo de mirar y me centro en seguir mi camino hacia el mercadona</a></p>",
+        {
+            heading: "Tras mirar detalladamente ...",
+        }
     ),
     
-    /*Elijo no comprar churros y voy al Mercadona*/
-    noChurros: new undum.SimpleSituation(
+    /*Elijo comprar churros y voy al Mercadona*/
+    siChurros: new undum.SimpleSituation(
         "<p>Me los merezco, y además ya es demasiado tarde como para empezar la operación bikini, allá que voy.</p>\
         <p>Cuando llego algo extraño oigo</p>\
         <p><a href='detalladamente_churreria'>Escuchar detalladamente la conversación</a>.</p>\
         <p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='irCasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irMercadonaFin'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.</p>",
+        {
+            heading: "¡A por esos ricos churros!",
+        }
     ),
 
-  /*Mirar detalladamente el campamento*/
+  /*Mirar detalladamente churreria*/
   detalladamente_churros: new undum.SimpleSituation(
        "<p>Creo que tengo el oido algo tocado también debido al cansancio del estudio, simplemente era una anciana pidiendo la vez.</p>\
         <p><a href='seguir'>Dejo de escuchar y me centro en comprar</a></p>",
        {
-      heading: "Tras escuchar detalladamente ...",
+            heading: "Tras escuchar detalladamente ...",
        }
   ),
 
+  /*Dejar de escuchar detalladamente*/
   seguir: new undum.SimpleSituation(
        "<p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='irCasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irMercadonaFin'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.</p>",
-  )
+  ),
 
+  /*Elijo volver a casa sin ir al mercadona*/
+  irCasa: new undum.SimpleSituation(
+
+  ),
+
+  /*Elijo ir al mercadona, comprar y volver a casa*/
+  irMercadonaFin: new undum.SimpleSituation(
+
+  ),
 
 
 
