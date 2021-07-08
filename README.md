@@ -4,7 +4,7 @@
 
 ## Autor
 
-- Vico Guzmán, Sebastián Alberto - _savg0001@red.uajen.es_.
+Vico Guzmán, Sebastián Alberto - _savg0001@red.uajen.es_.
 
 3º Ingeniería del software - Ingeniería informática.
 
@@ -14,25 +14,51 @@
 
 [2. URL del tablero Trello](#trello)
 
-[3. Capturas de pantalla del tablero en Trello](#sprint2)
+[3. Capturas de pantalla del tablero en Trello](#capturasTrello)
 
-- [3.1. Product Backlog al comienzo](#tarjetas2)
+- [3.1. Product Backlog al comienzo](#comienzo)
 
-[4. Capturas de pantalla de Telegram]
+[4. Capturas de pantalla de Telegram](#telegram)
 
 
 <a name="titulo"></a>
 
 # 1. Título y descripción del juego
 
-## 1.1. Título: El primer día de vacaciones.
+## **El primer día de vacaciones.**
 
-## 1.2. Descripcióm: El juego relata el primer día, tras un largo y extraño curso lleno de novedades, de un joven estudiante de ingeniería informática que no sabe muy bien que hacer...
+## El juego relata el primer día, tras un largo y extraño curso lleno de novedades, de un joven estudiante de ingeniería informática que no sabe muy bien que hacer...
+
+<a name="trello"></a>
 
 # 2. URL del tablero en Trello
 
 **_Enlace al tablero de Trello_**: [https://trello.com/b/NdbcQ641/pr%C3%A1ctica-2](https://trello.com/b/NdbcQ641/pr%C3%A1ctica-2)
 
-<a name="tarjetas1"></a>
+<a name="capturasTrello"></a>
 
-## 2.1. Tarjetas escogidas
+# 3. Capturas de pantalla del tablero en Trello
+
+<a name="comienzo"></a>
+
+## 3.1. Product Backlog al comienzo
+
+![Captura1](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/PBacklogordenado1.PNG)
+
+_Captura del tablero de Trello al iniciar la práctica (1/2)_
+
+![Captura2](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/PBacklogordenado2.PNG)
+
+_Captura del tablero de Trello al iniciar la práctica (2/2)_
+
+<a name="capturasTrello"></a>
+
+# 4. Capturas de pantalla de Telegram
+
+![Captura3](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/VinculadoTrello.PNG)
+
+_Captura de Telegram: vinculado Trello_
+
+![Captura4](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/VinculadoGitHub.PNG)
+
+_Captura del Telegram: Vinculado GitHub_
