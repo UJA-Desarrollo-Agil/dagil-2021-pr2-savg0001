@@ -55,10 +55,10 @@ _Captura del tablero de Trello al iniciar la práctica (2/2)_
 
 # 4. Capturas de pantalla de Telegram
 
-![Captura3](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/VinculadoTrello.PNG)
+![Captura3](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/VinculadoTrelloo.PNG)
 
 _Captura de Telegram: Trello vinculado_
 
-![Captura4](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/VinculadoGitHub.PNG)
+![Captura4](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/VinculadoGitHubb.PNG)
 
 _Captura del Telegram: GitHub vinculado_
