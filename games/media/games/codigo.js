@@ -40,14 +40,14 @@ undum.game.situations = {
     /*Elijo volver a la cama*/
     dormir: new undum.SimpleSituation(
         "<p>Vuelvo a la cama pero tras un rato intentando dormir me doy cuenta de que es imposible. Que injusta es la vida, los días de clase me levantaba cual zombie que desea volver a su tumba y hoy, que por fin puedo hacerlo mi cuerpo me dice que no es posible.</p>\
-        <p>Sin embargo, mi apetito me llama, <a href='desayunar'>hora de bajar a desayunar</a></p>",
+        <p>Sin embargo, mi apetito me llama, <a href='desaunar'>hora de bajar a desayunar</a></p>",
         {
             heading: "Vuelta al sobre",
         }
     ),
 
     /*Elijo bajar a desayunar*/
-    desayunar: new undum.SimpleSituation(
+    desaunar: new undum.SimpleSituation(
         "<p>Entro en la cocina sin saber muy bien que desayunar porque me temo lo peor y al afrir el frigorífico lo confirmo.</p>\
         <p>Solo hay unas latas de cerveza y un plato de macarrones que sobraron de ayer aunque es extraño que sobrasen con lo que me gustan...</p>\
         <p><a href='macarrones>Bah, desayuno los macarrones y que pase lo que tenga que pasar</a> <a href='comprar'>toca ir a comprar algo que pegue más a estas horas</a>.</p>",
