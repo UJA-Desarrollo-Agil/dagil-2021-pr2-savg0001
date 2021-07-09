@@ -34,7 +34,7 @@ undum.game.situations = {
         <p>Pongo mis pies con firmeza sobre el suelo y cojo el móvil como de costumbre, me da por mirar la hora y... ¿CÓMO? </p>\
         <p> Son las 9 de la mañana!!! Es el primer día que podía hacer desaparecer mis ojeras después de meses de madrugones y ¡¡mi cuerpo no ha querido hacerlo!!\
         Será que se ha habituado a eso de levantarme temprano per ¿Qué hago ahora?</p>\
-        <p> <a href='dormirMas'>¿Vuelvo a la cama</a> o <a href='desayunar'>bajo a desayunar?</a>.</p>"
+        <p><a href='dormirMas'>¿Vuelvo a la cama</a> o <a href='desayunar'>bajo a desayunar?</a>.</p>"
     ),
 
     /*Elijo volver a la cama*/
@@ -50,7 +50,7 @@ undum.game.situations = {
     desayunar: new undum.SimpleSituation(
         "<p>Entro en la cocina sin saber muy bien que desayunar porque me temo lo peor y al afrir el frigorífico lo confirmo.</p>\
         <p>Solo hay unas latas de cerveza y un plato de macarrones que sobraron de ayer aunque es extraño que sobrasen con lo que me gustan...</p>\
-        <p> <a href='macarrones>Bah, desayuno los macarrones y que pase lo que tenga que pasar</a> <a href='comprar'>toca ir a comprar algo que pegue más a estas horas</a>.</p>",
+        <p><a href='macarrones>Bah, desayuno los macarrones y que pase lo que tenga que pasar</a> <a href='comprar'>toca ir a comprar algo que pegue más a estas horas</a>.</p>",
         {
             heading: "Hora de abrir el frigo...",
         }
