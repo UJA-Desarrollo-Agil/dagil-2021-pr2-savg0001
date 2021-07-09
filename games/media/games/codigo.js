@@ -39,8 +39,8 @@ undum.game.situations = {
 
     /*Elijo volver a la cama*/
     dormirMas: new undum.SimpleSituation(
-        "<p>Vuelvo a la cama pero tras un rato intentando dormir me doy cuenta de que es imposible. Que injusta es la vida, los días de clase me levantaba\
-        cual zombie que desea volver a su tumba y hoy, que por fin puedo hacerlo mi cuerpo me dice que no es posible. Sin embargo, mi apetito me llama, <a href='desayunar'>hora de bajar a desayunar</a></p>",
+        "<p>Vuelvo a la cama pero tras un rato intentando dormir me doy cuenta de que es imposible. Que injusta es la vida, los días de clase me levantaba cual zombie que desea volver a su tumba y hoy, que por fin puedo hacerlo mi cuerpo me dice que no es posible.</p>\
+        <p>Sin embargo, mi apetito me llama, <a href='desayunar'>hora de bajar a desayunar</a></p>",
         {
             heading: "Vuelta al sobre",
         }
