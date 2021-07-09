@@ -50,7 +50,7 @@ undum.game.situations = {
     desaunar: new undum.SimpleSituation(
         "<p>Entro en la cocina sin saber muy bien que desayunar porque me temo lo peor y al afrir el frigorífico lo confirmo.</p>\
         <p>Solo hay unas latas de cerveza y un plato de macarrones que sobraron de ayer aunque es extraño que sobrasen con lo que me gustan...</p>\
-        <p><a href='macarrones'>Bah, desayuno los macarrones y que pase lo que tenga que pasar</a> <a href='comprar'>toca ir a comprar algo que pegue más a estas horas</a>.</p>",
+        <p><a href='macarrones'>Bah, desayuno los macarrones y que pase lo que tenga que pasar</a> o mejor <a href='comprar'>voy ir a comprar algo que pegue más a estas horas</a>.</p>",
         {
             heading: "Hora de abrir el frigo...",
         }
@@ -69,17 +69,17 @@ undum.game.situations = {
     /*Elijo ir a comprar*/
     comprar: new undum.SimpleSituation(
         "<p>Ya en la calle, cambiado y aseado afronto mi intrepidante camino hacia el Mercadona que está a 10 minutos de casa, pero de repente algo acapara toda mi atención. ¡La churrería del barrio está abierta!</p>\
-        <p>Como durante la semana toca ir virtualmente a clase y los findes son para descansar pensaba que eso de la churrería abierta era un mito. Esto puede que cambie mis planes, <a href='siChurros'>¿decido hacer una paradita para comprar churros</a> <a href='noChurros'>continúo mi aburrido camino sin churros al mercadona</a>.</p>",
+        <p>Como durante la semana toca ir virtualmente a clase y los findes son para descansar pensaba que eso de la churrería abierta era un mito. Esto puede que cambie mis planes, <a href='sichurros'>¿Decido hacer una paradita para comprar churros</a> o <a href='nochurros'>continúo mi aburrido camino sin churros al mercadona?</a>.</p>",
         {
             heading: "Se ha roto un mito",
         }
     ),
 
     /*Elijo no comprar churros*/ 
-    noChurros: new undum.SimpleSituation(
+    nochurros: new undum.SimpleSituation(
         "<p>Mejor no compro churros, tengo que mantener la línea porque ¡ya es verano! Así que sigo mi camino hacia el mercadona pero antes veo algo raro en la calle.</p>\
-        <p><a href='detalladamente_calle'>Mirar detalladamente que pasa</a>.</p>\
-        <p><a href='irMercadonaFin'>Sigo mi camino hacia el mercadona, que estoy apunto de llegar</a></p>",
+        <p><a href='detalladamentecalle'>Mirar detalladamente que pasa</a>.</p>\
+        <p><a href='irmercadonafin'>Sigo mi camino hacia el mercadona, que estoy apunto de llegar</a></p>",
         {
             heading: "No me apetecen churros",
         }
@@ -87,27 +87,27 @@ undum.game.situations = {
     ),
 
     /*Mirar detalladamente calle*/
-    detalladamente_churros: new undum.SimpleSituation(
+    detalladamentecalle: new undum.SimpleSituation(
         "<p>No veo demasiado bien debido al cansancion por el estudio, simplemete era una hoja bailando por el viento.</p>\
-        <p><a href='irMercadonaFin'>Dejo de mirar y me centro en seguir mi camino hacia el mercadona</a></p>",
+        <p><a href='irmercadonafin'>Dejo de mirar y me centro en seguir mi camino hacia el mercadona</a></p>",
         {
             heading: "Tras mirar detalladamente ...",
         }
     ),
     
     /*Elijo comprar churros y voy al Mercadona*/
-    siChurros: new undum.SimpleSituation(
+    sichurros: new undum.SimpleSituation(
         "<p>Me los merezco, y además ya es demasiado tarde como para empezar la operación bikini, allá que voy.</p>\
         <p>Cuando llego algo extraño oigo</p>\
-        <p><a href='detalladamente_churreria'>Escuchar detalladamente la conversación</a>.</p>\
-        <p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='irCasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irMercadonaFin'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.</p>",
+        <p><a href='detalladamentechurros'>Escuchar detalladamente la conversación</a>.</p>\
+        <p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='ircasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irmercadonafin'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.</p>",
         {
             heading: "¡A por esos ricos churros!",
         }
     ),
 
   /*Mirar detalladamente churreria*/
-  detalladamente_churros: new undum.SimpleSituation(
+  detalladamentechurros: new undum.SimpleSituation(
        "<p>Creo que tengo el oido algo tocado también debido al cansancio del estudio, simplemente era una anciana pidiendo la vez.</p>\
         <p><a href='seguir'>Dejo de escuchar y me centro en comprar</a></p>",
        {
@@ -117,16 +117,19 @@ undum.game.situations = {
 
   /*Dejar de escuchar detalladamente*/
   seguir: new undum.SimpleSituation(
-       "<p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='irCasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irMercadonaFin'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.</p>",
+       "<p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='ircasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irmercadonafin'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.</p>",
   ),
 
   /*Elijo volver a casa sin ir al mercadona*/
-  irCasa: new undum.SimpleSituation(
+  ircasa: new undum.SimpleSituation(
+      "<p>Vuelvo a casa minetras desayuno tranquilamente, y me doy cuenta de que todos los escaparates de las tiendas del barrio están cerrados, lo cual me resulta muy extraño</p>\
+      <p>Saco mi móvil del bolsillo para buscar en internet que pasa cuando me da por mirar la fecha...¡Es domingo! Menos mal que no decidí ir al Mercadona porque estaría cerrado</p>\
+      <p>Así que prosigo mi camino aliviado por no haber hecho unos metros inútiles hasta que llego a casa.</p>"
 
   ),
 
   /*Elijo ir al mercadona, comprar y volver a casa*/
-  irMercadonaFin: new undum.SimpleSituation(
+  irmercadonamfin: new undum.SimpleSituation(
 
   ),
 
