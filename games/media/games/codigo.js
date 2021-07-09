@@ -34,11 +34,11 @@ undum.game.situations = {
         <p>Pongo mis pies con firmeza sobre el suelo y cojo el móvil como de costumbre, me da por mirar la hora y... ¿CÓMO? </p>\
         <p> Son las 9 de la mañana!!! Es el primer día que podía hacer desaparecer mis ojeras después de meses de madrugones y ¡¡mi cuerpo no ha querido hacerlo!!\
         Será que se ha habituado a eso de levantarme temprano per ¿Qué hago ahora?</p>\
-        <p><a href='dormirMas'>¿Vuelvo a la cama</a> o <a href='desayunar'>bajo a desayunar?</a>.</p>"
+        <p><a href='dormir'>¿Vuelvo a la cama</a> o <a href='desayunar'>bajo a desayunar?</a>.</p>"
     ),
 
     /*Elijo volver a la cama*/
-    dormirMas: new undum.SimpleSituation(
+    dormir: new undum.SimpleSituation(
         "<p>Vuelvo a la cama pero tras un rato intentando dormir me doy cuenta de que es imposible. Que injusta es la vida, los días de clase me levantaba cual zombie que desea volver a su tumba y hoy, que por fin puedo hacerlo mi cuerpo me dice que no es posible.</p>\
         <p>Sin embargo, mi apetito me llama, <a href='desayunar'>hora de bajar a desayunar</a></p>",
         {
