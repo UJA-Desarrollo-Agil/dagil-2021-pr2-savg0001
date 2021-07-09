@@ -50,7 +50,7 @@ undum.game.situations = {
     desaunar: new undum.SimpleSituation(
         "<p>Entro en la cocina sin saber muy bien que desayunar porque me temo lo peor y al afrir el frigorífico lo confirmo.</p>\
         <p>Solo hay unas latas de cerveza y un plato de macarrones que sobraron de ayer aunque es extraño que sobrasen con lo que me gustan...</p>\
-        <p><a href='macarrones>Bah, desayuno los macarrones y que pase lo que tenga que pasar</a> <a href='comprar'>toca ir a comprar algo que pegue más a estas horas</a>.</p>",
+        <p><a href='macarrones'>Bah, desayuno los macarrones y que pase lo que tenga que pasar</a> <a href='comprar'>toca ir a comprar algo que pegue más a estas horas</a>.</p>",
         {
             heading: "Hora de abrir el frigo...",
         }
