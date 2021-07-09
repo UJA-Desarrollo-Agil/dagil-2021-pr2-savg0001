@@ -125,6 +125,9 @@ undum.game.situations = {
       "<p>Vuelvo a casa mientras desayuno tranquilamente, y me doy cuenta de que todos los escaparates de las tiendas del barrio están cerrados, lo cual me resulta muy extraño</p>\
       <p>Saco mi móvil del bolsillo para buscar en internet que pasa cuando me da por mirar la fecha...¡Es domingo! Menos mal que no decidí ir al Mercadona porque estaría cerrado</p>\
       <p>Así que prosigo mi camino aliviado por no haber hecho unos metros inútiles hasta que llego a casa.</p>",
+      {
+          heading: "Ya no se ni en qué día vivo"
+      }
 
   ),
 
@@ -132,6 +135,9 @@ undum.game.situations = {
   irmercadonasinchurros: new undum.SimpleSituation(
     "<p>Cuando llego al Mercadona me quedo asombrado, ¡Está cerrado! Que extraño me parece, decido sacar mi móvil para buscar en internet que ha pasado cuando me da por mirar la fecha.</p>\
     <p>¡Hoy es domingo! Que torpe soy, será también cosa de las horas de estudio...Pues nada, toca volver a casa pero no me rendiré en mi lucha por desayunar algo rico. Ahora sí, toca <a href='churrosfin'>comprar esos churros</a>.</p>",
+    {
+        heading: "Adiós a la operación bikini"
+    }
   ),
 
   churrosfin: new undum.SimpleSituation(
@@ -144,6 +150,9 @@ undum.game.situations = {
     "<p>Cuando llego al Mercadona me quedo asombrado, ¡Está cerrado! Que extraño me parece, decido sacar mi móvil para buscar en internet que ha pasado cuando me da por mirar la fecha.</p>\
     <p>¡Hoy es domingo! Que torpe soy, será también cosa de las horas de estudio...Pues nada, toca volver a casa pero por lo menos he conseguido algo rico de desayuno, ya pensaré en que como...</p>\
     <p>Así que prosigo mi camino aliviado por haber comido algo hasta que llego a casa.</p>",  
+    {
+        heading: "Un paseo en vano"
+    }
   )
 };
 
