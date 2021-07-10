@@ -122,11 +122,17 @@ undum.game.situations = {
 
   /*Dejar de escuchar detalladamente*/
   seguir: new undum.SimpleSituation(
-       "<p>Con la boca hecha agua pido los churros. <a href='eleccion_objeto'>El churrero me da a elegir entre estos.</a>  y me dispongo a comerlos mientras sigo mi camino.",
+       "<p>Con la boca hecha agua <a href='eleccion_objetou'>el churrero me da a elegir entre estos.</a>",
+       {
+           heading: "¡A comprar!"
+       }
   ),
 
-  continuar_historia: new undum.SimpleSituation(
-      "Ya con los churros, vuelvo a dudar, no se si <a href='ircasa'>vuelver a casa</a> o <a href='irmercadonaconchurros'>ya que estoy aquí, voy al Mercadona de una vez</a>.</p>"
+  continuarhistoria1: new undum.SimpleSituation(
+      "<p>Ya con los churros, vuelvo a dudar, no se si <a href='ircasa'>volver a casa</a> o <a href='irmercadonaconchurros'>ya que estoy aquí, voy al Mercadona de una vez</a>.</p>",
+      {
+          heading: "¿Y ahora qué?"
+      }
   ),
 
   /*Elijo volver a casa sin ir al mercadona*/
@@ -153,8 +159,14 @@ undum.game.situations = {
 
   churrosfin: new undum.SimpleSituation(
     "<img src='./media/img/churros.png' class='float_right' width='250' height='250'>\
-      <p>LLego a la churrería rápidamente porque mi estómago no para de rugir y por fin obtengo mi preciado desayuno, ya tendré tiempo de empezar la operación bikini mañana.</p>\
-      <p>Así que prosigo mi camino aliviado por haber comido algo hasta que llego a casa.</p>",
+      <p>LLego a la churrería rápidamente porque mi estómago no para de rugir y con la boca hecha agua <a href='eleccion_objeto2'>el churrero me da a elegir entre estos.</a></p>",
+  ),
+
+  continuarhistoria2: new undum.SimpleSituation(
+    "<p>Así que prosigo mi camino aliviado por haber comido algo hasta que llego a casa.</p>",
+    {
+        heading: "Tanto esfuerzo ha tenido su recompensa...."
+    }
   ),
 
   /*Elijo ir al mercadona y volver a casa*/
@@ -173,7 +185,7 @@ undum.game.situations = {
 // Churros normales
 opcion1: new undum.Situation({
     enter: function (character, system, from) {
-      system.write($("#s_situations").html());
+      system.write($("#s_situations1").html());
       system.animateQuality(
         "churroNormal",
         character.qualities.churroNormal + 1
@@ -183,7 +195,7 @@ opcion1: new undum.Situation({
       }
       system.write($("#compro_churronormal").html());
     },
-    tags: ["eleccion_objeto"],
+    tags: ["eleccion_objetou"],
     optionText: "Churros normales",
     displayOrder: 1,
   }),
@@ -191,7 +203,7 @@ opcion1: new undum.Situation({
 // Churros normales rellenos de chocolate
 opcion2: new undum.Situation({
     enter: function (character, system, from) {
-      system.write($("#s_situations").html());
+      system.write($("#s_situations1").html());
       system.animateQuality(
         "churroNormalChocolate",
         character.qualities.churroNormalChocolate + 1
@@ -201,7 +213,7 @@ opcion2: new undum.Situation({
       }
       system.write($("#compro_churronormalchocolate").html());
     },
-    tags: ["eleccion_objeto"],
+    tags: ["eleccion_objetou"],
     optionText: "Churros normales con chocolate",
     displayOrder: 1,
   }),
@@ -209,7 +221,7 @@ opcion2: new undum.Situation({
   // Churros de lazo normales
   opcion3: new undum.Situation({
     enter: function (character, system, from) {
-      system.write($("#s_situations").html());
+      system.write($("#s_situations1").html());
       system.animateQuality(
         "churroLazoNormal",
         character.qualities.churroLazoNormal + 1
@@ -219,7 +231,7 @@ opcion2: new undum.Situation({
       }
       system.write($("#compro_lazonormal").html());
     },
-    tags: ["eleccion_objeto"],
+    tags: ["eleccion_objetou"],
     optionText: "Churros de lazo normales",
     displayOrder: 1,
   }),
@@ -227,7 +239,7 @@ opcion2: new undum.Situation({
 // Churro de lazo relleno de chocolate
 opcion4: new undum.Situation({
     enter: function (character, system, from) {
-      system.write($("#s_situations").html());
+      system.write($("#s_situations1").html());
       system.animateQuality(
         "churroLazoChocolate",
         character.qualities.churroLazoChocolate + 1
@@ -237,7 +249,79 @@ opcion4: new undum.Situation({
       }
       system.write($("#compro_lazochocolate").html());
     },
-    tags: ["eleccion_objeto"],
+    tags: ["eleccion_objetou"],
+    optionText: "Churros de lazo con chocolate",
+    displayOrder: 1,
+  }),
+
+  // Churros normales
+opcion5: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations2").html());
+      system.animateQuality(
+        "churroNormal",
+        character.qualities.churroNormal + 1
+      );
+      if (character.qualities.churroNormal <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#compro_churronormal").html());
+    },
+    tags: ["eleccion_objeto2"],
+    optionText: "Churros normales",
+    displayOrder: 1,
+  }),
+
+// Churros normales rellenos de chocolate
+opcion6: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations2").html());
+      system.animateQuality(
+        "churroNormalChocolate",
+        character.qualities.churroNormalChocolate + 1
+      );
+      if (character.qualities.churroNormalChocolate <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#compro_churronormalchocolate").html());
+    },
+    tags: ["eleccion_objeto2"],
+    optionText: "Churros normales con chocolate",
+    displayOrder: 1,
+  }),
+
+  // Churros de lazo normales
+  opcion7: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations2").html());
+      system.animateQuality(
+        "churroLazoNormal",
+        character.qualities.churroLazoNormal + 1
+      );
+      if (character.qualities.churroLazoNormal <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#compro_lazonormal").html());
+    },
+    tags: ["eleccion_objeto2"],
+    optionText: "Churros de lazo normales",
+    displayOrder: 1,
+  }),
+
+// Churro de lazo relleno de chocolate
+opcion8: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations2").html());
+      system.animateQuality(
+        "churroLazoChocolate",
+        character.qualities.churroLazoChocolate + 1
+      );
+      if (character.qualities.churroLazoChocolate <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#compro_lazochocolate").html());
+    },
+    tags: ["eleccion_objeto2"],
     optionText: "Churros de lazo con chocolate",
     displayOrder: 1,
   }),

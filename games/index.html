@@ -139,11 +139,20 @@
          you want to load from your game code. See the
          tutorial.game.js file for details of how this is used. -->
     <div id="content_library">
-      <div id="s_situations">
+      <div id="s_situations1">
         <h1>Elección</h1>
         <p class="transient">
-          ¿Compro algunos otros? <a href="eleccion_objeto">Sí</a> o
-          <a href="continuar_historia">continuo mi camino</a> con estos.
+          ¿Compro algunos otros? <a href="eleccion_objetou">Sí</a> o
+          <a href="continuarhistoria1">continuo mi camino</a> con estos.
+        </p>
+      </div>
+
+    <div id="content_library">
+      <div id="s_situations2">
+        <h1>Elección</h1>
+        <p class="transient">
+          ¿Compro algunos otros? <a href="eleccion_objeto2">Sí</a> o
+          <a href="continuarhistoria2">continuo mi camino</a> con estos.
         </p>
       </div>
 
@@ -179,17 +188,30 @@
 
       <!-- Some situations defined entirely in the HTML -->
       <div
-        id="eleccion_objeto"
+        id="eleccion_objetou"
         class="situation"
-        data-choices="#eleccion_objeto"
+        data-choices="#eleccion_objetou"
         data-option-text="View Topic List"
       >
-        <h1 class="transient">Elección del tipo de churros</h1>
+        <h1 class="transient">Elección del tipo de churros que voy a comprar</h1>
         <p class="transient">
-          Elige el tipo de churros que quieres comprar<br />
-          se añadirán a su inventario.
+          Elige el tipo de churros que quieres comprar, <br />
+          se añadirán a su lista de objetos.
         </p>
       </div>
+
+      <div
+      id="eleccion_objeto2"
+      class="situation"
+      data-choices="#eleccion_objeto2"
+      data-option-text="View Topic List"
+    >
+      <h1 class="transient">Elección del tipo de churros que voy a comprar</h1>
+      <p class="transient">
+        Elige el tipo de churros que quieres comprar, <br />
+        se añadirán a su lista de objetos.
+      </p>
+    </div>
 
       <!-- Listado de objetos cogidos -->
       <div id="compro_churronormal">
