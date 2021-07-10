@@ -30,6 +30,7 @@ undum.game.slideUpSpeed = 500
 undum.game.situations = {
     start: new undum.SimpleSituation(
         "<h1>El comienzo de un nuevo día</h1>\
+        <img src='./media/img/sol.png' class='float_ce' width='500' height='400'>\
         <p>El despertador...¡NO HA SONADO! Por fin estoy de vacaciones y se acabó eso de madrugar.</p>\
         <p>Pongo mis pies con firmeza sobre el suelo y cojo el móvil como de costumbre, me da por mirar la hora y... ¿CÓMO? </p>\
         <p> Son las 9 de la mañana!!! Es el primer día que podía hacer desaparecer mis ojeras después de meses de madrugones y ¡¡mi cuerpo no ha querido hacerlo!!\
