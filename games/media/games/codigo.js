@@ -72,7 +72,7 @@ undum.game.situations = {
 
     /*Elijo ir a comprar*/
     comprar: new undum.SimpleSituation(
-        "<img src='./media/img/churreria.png' class='float_right' width='250' height='250'>\
+        "<img src='./media/img/churreria.png' class='float_right' width='350' height='250'>\
         <p>Ya en la calle, cambiado y aseado afronto mi intrepidante camino hacia el Mercadona que está a 10 minutos de casa, pero de repente algo acapara toda mi atención. ¡La churrería del barrio está abierta!</p>\
         <p>Como durante la semana toca ir virtualmente a clase y los findes son para descansar pensaba que eso de la churrería abierta era un mito. Esto puede que cambie mis planes, <a href='sichurros'>¿Decido hacer una paradita para comprar churros</a> o <a href='nochurros'>continúo mi aburrido camino sin churros al mercadona?</a>.</p>",
         {
@@ -82,7 +82,7 @@ undum.game.situations = {
 
     /*Elijo no comprar churros*/ 
     nochurros: new undum.SimpleSituation(
-        "<img src='./media/img/mercadona.png' class='float_ce' width='400' height='400'>\
+        "<img src='./media/img/mercadona.png' class='float_right' width='250' height='250'>\
         <p>Mejor no compro churros, tengo que mantener la línea porque ¡ya es verano! Así que sigo mi camino hacia el mercadona pero antes veo algo raro en la calle.</p>\
         <p><a href='detalladamentecalle'>Mirar detalladamente que pasa</a>.</p>",
         {
@@ -94,7 +94,7 @@ undum.game.situations = {
     /*Mirar detalladamente calle*/
     detalladamentecalle: new undum.SimpleSituation(
         "<p>No veo demasiado bien debido al cansancion por el estudio, simplemete era una hoja bailando por el viento.</p>\
-        <p><a href='irmercadonafin'>Dejo de mirar y me centro en seguir mi camino hacia el mercadona</a></p>",
+        <p><a href='irmercadonasinchurros'>Dejo de mirar y me centro en seguir mi camino hacia el mercadona</a></p>",
         {
             heading: "Tras mirar detalladamente ...",
         }
@@ -122,7 +122,7 @@ undum.game.situations = {
 
   /*Dejar de escuchar detalladamente*/
   seguir: new undum.SimpleSituation(
-       "<p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='ircasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irmercadonaconchurros'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.</p>",
+       "<p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, aunque vuelvo a dudar, no se si <a href='ircasa'>vuelver a casa</a> o <a href='irmercadonaconchurros'>ya que estoy aquí, voy al Mercadona de una vez</a>.</p>",
   ),
 
   /*Elijo volver a casa sin ir al mercadona*/
@@ -148,7 +148,8 @@ undum.game.situations = {
   ),
 
   churrosfin: new undum.SimpleSituation(
-      "<p>LLego a la churrería rápidamente porque mi estómago no para de rugir y por fin obtengo mi preciado desayuno, ya tendré tiempo de empezar la operación bikini mañana.</p>\
+    "<img src='./media/img/churros.png' class='float_right' width='250' height='250'>\
+      <p>LLego a la churrería rápidamente porque mi estómago no para de rugir y por fin obtengo mi preciado desayuno, ya tendré tiempo de empezar la operación bikini mañana.</p>\
       <p>Así que prosigo mi camino aliviado por haber comido algo hasta que llego a casa.</p>",
   ),
 
