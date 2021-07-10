@@ -57,7 +57,7 @@ _Captura del tablero de Trello al final de la práctica. La tarjeta 7 fue modifi
 
 ## Aclaración
 
-Quedaron dos tarjetas sin hacer debido a la mala gestión del tiempo.
+Quedaron dos tarjetas sin hacer debido a la mala gestión del tiempo, siendo estas las que menos valor aportan al proyecto.
 
 <a name="capturasTrello"></a>
 
