@@ -20,7 +20,6 @@ Grado en Ingeniería Informática, Universidad de Jaén.
 
 [4. Capturas de pantalla de Telegram](#telegram)
 
-
 <a name="titulo"></a>
 
 # 1. Título y descripción del juego
@@ -53,7 +52,7 @@ _Captura del tablero de Trello al iniciar la práctica (2/2)_
 
 ![Captura3](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/Fin.PNG)
 
-_Captura del tablero de Trello al final de la práctica. La tarjeta 7 fue modificada ya que ví mucho más práctico y visual añadir imágenes a implementar un diálogo_
+_Captura del tablero de Trello al final de la práctica. La tarjeta 7 fue modificada ya que ví mucho más práctico y visual añadir imágenes a implementar un diálogo._
 
 ## Aclaración
 
