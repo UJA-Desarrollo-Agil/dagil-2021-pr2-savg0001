@@ -17,6 +17,7 @@ Grado en Ingeniería Informática, Universidad de Jaén.
 [3. Capturas de pantalla del tablero en Trello](#capturasTrello)
 
 - [3.1. Product Backlog al comienzo](#comienzo)
+- [3.2. Product Backlog al final](#final)
 
 [4. Capturas de pantalla de Telegram](#telegram)
 
@@ -49,6 +50,10 @@ _Captura del tablero de Trello al iniciar la práctica (1/2)_
 ![Captura2](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/PBacklogordenado2.PNG)
 
 _Captura del tablero de Trello al iniciar la práctica (2/2)_
+
+<a name="final"></a>
+
+## 3.2. Product Backlog al final
 
 ![Captura3](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr2-savg0001/blob/desarrollo/img/Fin.PNG)
 
