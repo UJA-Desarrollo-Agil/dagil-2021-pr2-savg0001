@@ -30,17 +30,18 @@ undum.game.slideUpSpeed = 500
 undum.game.situations = {
     start: new undum.SimpleSituation(
         "<h1>El comienzo de un nuevo día</h1>\
-        <img src='./media/img/sol.png' class='float_ce' width='500' height='400'>\
+        <img src='./media/img/sol.png' class='float_ce' width='500' height='500'>\
         <p>El despertador...¡NO HA SONADO! Por fin estoy de vacaciones y se acabó eso de madrugar.</p>\
         <p>Pongo mis pies con firmeza sobre el suelo y cojo el móvil como de costumbre, me da por mirar la hora y... ¿CÓMO? </p>\
         <p> Son las 9 de la mañana!!! Es el primer día que podía hacer desaparecer mis ojeras después de meses de madrugones y ¡¡mi cuerpo no ha querido hacerlo!!\
         Será que se ha habituado a eso de levantarme temprano pero ¿Qué hago ahora?</p>\
-        <p><a href='dormir'>¿Vuelvo a la cama</a> o <a href='desayunar'>bajo a desayunar?</a>.</p>"
+        <p><a href='dormir'>¿Vuelvo a la cama</a> o <a href='desaunar'>bajo a desayunar?</a>.</p>"
     ),
 
     /*Elijo volver a la cama*/
     dormir: new undum.SimpleSituation(
-        "<p>Vuelvo a la cama pero tras un rato intentando dormir me doy cuenta de que es imposible. Que injusta es la vida, los días de clase me levantaba cual zombie que desea volver a su tumba y hoy, que por fin puedo hacerlo mi cuerpo me dice que no es posible.</p>\
+        "<img src='./media/img/desayuno.png' class='float_right' width='250' height='250'>\
+        <p>Vuelvo a la cama pero tras un rato intentando dormir me doy cuenta de que es imposible. Que injusta es la vida, los días de clase me levantaba cual zombie que desea volver a su tumba y hoy, que por fin puedo hacerlo mi cuerpo me dice que no es posible.</p>\
         <p>Sin embargo, mi apetito me llama, <a href='desaunar'>hora de bajar a desayunar</a></p>",
         {
             heading: "Vuelta al sobre",
@@ -49,7 +50,8 @@ undum.game.situations = {
 
     /*Elijo bajar a desayunar*/
     desaunar: new undum.SimpleSituation(
-        "<p>Entro en la cocina sin saber muy bien que desayunar porque me temo lo peor y al afrir el frigorífico lo confirmo.</p>\
+        "<img src='./media/img/frigo.png' class='float_right' width='250' height='250'>\
+        <p>Entro en la cocina sin saber muy bien que desayunar porque aunque me imagino un frigorífico lleno de comida, me temo lo peor y al abrirlo lo confirmo.</p>\
         <p>Solo hay unas latas de cerveza y un plato de macarrones que sobraron de ayer aunque es extraño que sobrasen con lo que me gustan...</p>\
         <p><a href='macarrones'>Bah, desayuno los macarrones y que pase lo que tenga que pasar</a> o mejor <a href='comprar'>voy ir a comprar algo que pegue más a estas horas</a>.</p>",
         {
@@ -59,7 +61,8 @@ undum.game.situations = {
 
     /*Elijo desayunar los macarrones*/
     macarrones: new undum.SimpleSituation(
-        "<p>Ahora recuerdo por qué me sobraron tantos macarrones, agotado por el estudio del último examen confundí la sal con el azúcar y no son para nada apetecibles...¡Vaya desastre!</p>\
+        "<img src='./media/img/azucar.png' class='float_right' width='250' height='250'>\
+        <p>Ahora recuerdo por qué me sobraron tantos macarrones, agotado por el estudio del último examen confundí la sal con el azúcar y no son para nada apetecibles...¡Vaya desastre!</p>\
          <p>Supongo que una retirada a tiempo siempre es una victoria así que ahora sí que sí, <a href='comprar'>AL MERCADONAAAAA</a>.</p>",
          {
              heading: "¿Cómo puede ser que dos cosas tan parecidas sepan tan diferente?",
