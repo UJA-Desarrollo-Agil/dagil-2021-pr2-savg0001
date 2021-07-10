@@ -72,7 +72,8 @@ undum.game.situations = {
 
     /*Elijo ir a comprar*/
     comprar: new undum.SimpleSituation(
-        "<p>Ya en la calle, cambiado y aseado afronto mi intrepidante camino hacia el Mercadona que está a 10 minutos de casa, pero de repente algo acapara toda mi atención. ¡La churrería del barrio está abierta!</p>\
+        "<img src='./media/img/churros.png' class='float_right' width='250' height='250'>\
+        <p>Ya en la calle, cambiado y aseado afronto mi intrepidante camino hacia el Mercadona que está a 10 minutos de casa, pero de repente algo acapara toda mi atención. ¡La churrería del barrio está abierta!</p>\
         <p>Como durante la semana toca ir virtualmente a clase y los findes son para descansar pensaba que eso de la churrería abierta era un mito. Esto puede que cambie mis planes, <a href='sichurros'>¿Decido hacer una paradita para comprar churros</a> o <a href='nochurros'>continúo mi aburrido camino sin churros al mercadona?</a>.</p>",
         {
             heading: "Se ha roto un mito",
@@ -81,9 +82,9 @@ undum.game.situations = {
 
     /*Elijo no comprar churros*/ 
     nochurros: new undum.SimpleSituation(
-        "<p>Mejor no compro churros, tengo que mantener la línea porque ¡ya es verano! Así que sigo mi camino hacia el mercadona pero antes veo algo raro en la calle.</p>\
-        <p><a href='detalladamentecalle'>Mirar detalladamente que pasa</a>.</p>\
-        <p><a href='irmercadonasinchurros'>Sigo mi camino hacia el mercadona, que estoy apunto de llegar</a></p>",
+        "<img src='./media/img/mercadona.png' class='float_ce' width='400' height='400'>\
+        <p>Mejor no compro churros, tengo que mantener la línea porque ¡ya es verano! Así que sigo mi camino hacia el mercadona pero antes veo algo raro en la calle.</p>\
+        <p><a href='detalladamentecalle'>Mirar detalladamente que pasa</a>.</p>",
         {
             heading: "No me apetecen churros",
         }
@@ -103,8 +104,7 @@ undum.game.situations = {
     sichurros: new undum.SimpleSituation(
         "<p>Me los merezco, y además ya es demasiado tarde como para empezar la operación bikini, allá que voy.</p>\
         <p>Cuando llego algo extraño oigo</p>\
-        <p><a href='detalladamentechurros'>Escuchar detalladamente la conversación</a>.</p>\
-        <p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, <a href='ircasa'>creo que el frigo esta bien, vuelvo a casa</a> <a href='irmercadonaconchurros'>llegado hasta aquí, toca ir al Mercadona de una vez</a>.</p>",
+        <p><a href='detalladamentechurros'>Escuchar detalladamente la conversación</a>.</p>",
         {
             heading: "¡A por esos ricos churros!",
         }
