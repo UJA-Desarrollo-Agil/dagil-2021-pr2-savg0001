@@ -72,7 +72,7 @@ undum.game.situations = {
 
     /*Elijo ir a comprar*/
     comprar: new undum.SimpleSituation(
-        "<img src='./media/img/churros.png' class='float_right' width='250' height='250'>\
+        "<img src='./media/img/churreria.png' class='float_right' width='250' height='250'>\
         <p>Ya en la calle, cambiado y aseado afronto mi intrepidante camino hacia el Mercadona que está a 10 minutos de casa, pero de repente algo acapara toda mi atención. ¡La churrería del barrio está abierta!</p>\
         <p>Como durante la semana toca ir virtualmente a clase y los findes son para descansar pensaba que eso de la churrería abierta era un mito. Esto puede que cambie mis planes, <a href='sichurros'>¿Decido hacer una paradita para comprar churros</a> o <a href='nochurros'>continúo mi aburrido camino sin churros al mercadona?</a>.</p>",
         {
@@ -102,7 +102,8 @@ undum.game.situations = {
     
     /*Elijo comprar churros y voy al Mercadona*/
     sichurros: new undum.SimpleSituation(
-        "<p>Me los merezco, y además ya es demasiado tarde como para empezar la operación bikini, allá que voy.</p>\
+        "<img src='./media/img/churros.png' class='float_right' width='250' height='250'>\
+        <p>Me los merezco, y además ya es demasiado tarde como para empezar la operación bikini, allá que voy.</p>\
         <p>Cuando llego algo extraño oigo</p>\
         <p><a href='detalladamentechurros'>Escuchar detalladamente la conversación</a>.</p>",
         {
@@ -126,7 +127,8 @@ undum.game.situations = {
 
   /*Elijo volver a casa sin ir al mercadona*/
   ircasa: new undum.SimpleSituation(
-      "<p>Vuelvo a casa mientras desayuno tranquilamente, y me doy cuenta de que todos los escaparates de las tiendas del barrio están cerrados, lo cual me resulta muy extraño</p>\
+    "<img src='./media/img/cerrado.png' class='float_right' width='250' height='250'>\
+      <p>Vuelvo a casa mientras desayuno tranquilamente, y me doy cuenta de que todos los escaparates de las tiendas del barrio están cerrados, lo cual me resulta muy extraño</p>\
       <p>Saco mi móvil del bolsillo para buscar en internet que pasa cuando me da por mirar la fecha...¡Es domingo! Menos mal que no decidí ir al Mercadona porque estaría cerrado</p>\
       <p>Así que prosigo mi camino aliviado por no haber hecho unos metros inútiles hasta que llego a casa.</p>",
       {
