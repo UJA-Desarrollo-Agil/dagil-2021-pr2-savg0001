@@ -122,7 +122,11 @@ undum.game.situations = {
 
   /*Dejar de escuchar detalladamente*/
   seguir: new undum.SimpleSituation(
-       "<p>Con la boca hecha agua pido los churros y me dispongo a comerlos mientras sigo mi camino, aunque vuelvo a dudar, no se si <a href='ircasa'>vuelver a casa</a> o <a href='irmercadonaconchurros'>ya que estoy aquí, voy al Mercadona de una vez</a>.</p>",
+       "<p>Con la boca hecha agua pido los churros. <a href='eleccion_objeto'>El churrero me da a elegir entre estos.</a>  y me dispongo a comerlos mientras sigo mi camino.",
+  ),
+
+  continuar_historia: new undum.SimpleSituation(
+      "Ya con los churros, vuelvo a dudar, no se si <a href='ircasa'>vuelver a casa</a> o <a href='irmercadonaconchurros'>ya que estoy aquí, voy al Mercadona de una vez</a>.</p>"
   ),
 
   /*Elijo volver a casa sin ir al mercadona*/
@@ -162,7 +166,82 @@ undum.game.situations = {
     {
         heading: "Un paseo en vano"
     }
-  )
+  ),
+
+
+//Menu elecciones
+// Churros normales
+opcion1: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations").html());
+      system.animateQuality(
+        "churroNormal",
+        character.qualities.churroNormal + 1
+      );
+      if (character.qualities.churroNormal <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#compro_churronormal").html());
+    },
+    tags: ["eleccion_objeto"],
+    optionText: "Churros normales",
+    displayOrder: 1,
+  }),
+
+// Churros normales rellenos de chocolate
+opcion2: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations").html());
+      system.animateQuality(
+        "churroNormalChocolate",
+        character.qualities.churroNormalChocolate + 1
+      );
+      if (character.qualities.churroNormalChocolate <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#compro_churronormalchocolate").html());
+    },
+    tags: ["eleccion_objeto"],
+    optionText: "Churros normales con chocolate",
+    displayOrder: 1,
+  }),
+
+  // Churros de lazo normales
+  opcion3: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations").html());
+      system.animateQuality(
+        "churroLazoNormal",
+        character.qualities.churroLazoNormal + 1
+      );
+      if (character.qualities.churroLazoNormal <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#compro_lazonormal").html());
+    },
+    tags: ["eleccion_objeto"],
+    optionText: "Churros de lazo normales",
+    displayOrder: 1,
+  }),
+
+// Churro de lazo relleno de chocolate
+opcion4: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations").html());
+      system.animateQuality(
+        "churroLazoChocolate",
+        character.qualities.churroLazoChocolate + 1
+      );
+      if (character.qualities.churroLazoChocolate <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#compro_lazochocolate").html());
+    },
+    tags: ["eleccion_objeto"],
+    optionText: "Churros de lazo con chocolate",
+    displayOrder: 1,
+  }),
+
 };
 
 // ---------------------------------------------------------------------------
@@ -174,24 +253,27 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    skill: new undum.IntegerQuality(
-        "Skill", {priority:"0001", group:'stats'}
-    ),
-    stamina: new undum.NumericQuality(
-        "Stamina", {priority:"0002", group:'stats'}
-    ),
-    luck: new undum.FudgeAdjectivesQuality( // Fudge as in the FUDGE RPG
-        "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>",
-        {priority:"0003", group:'stats'}
-    ),
-
-    inspiration: new undum.NonZeroIntegerQuality(
-        "Inspiration", {priority:"0001", group:'progress'}
-    ),
-    novice: new undum.OnOffQuality(
-        "Novice", {priority:"0002", group:'progress', onDisplay:"&#10003;"}
-    )
-};
+    churroNormal: new undum.OnOffQuality("Churros normales", {
+      priority: "0002",
+      group: "objetos",
+      onDisplay: "&#10003;",
+    }),
+    churroNormalChocolate: new undum.OnOffQuality("Churros normales con chocolate", {
+        priority: "0002",
+        group: "objetos",
+        onDisplay: "&#10003;",
+      }),
+      churroLazoNormal: new undum.OnOffQuality("Churros de lazo normales", {
+        priority: "0002",
+        group: "objetos",
+        onDisplay: "&#10003;",
+      }),
+      churroLazoChocolate: new undum.OnOffQuality("Churros de lazo con chocolate", {
+        priority: "0002",
+        group: "objetos",
+        onDisplay: "&#10003;",
+      }),
+  };
 
 // ---------------------------------------------------------------------------
 /* The qualities are displayed in groups in the character bar. This
@@ -201,17 +283,20 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
     stats: new undum.QualityGroup(null, {priority:"0001"}),
+
+    objetos: new undum.QualityGroup(null, { priority: "0001" }),
+
     progress: new undum.QualityGroup('Progress', {priority:"0002"})
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
-undum.game.init = function(character, system) {
-    character.qualities.skill = 12;
-    character.qualities.stamina = 12;
-    character.qualities.luck = 0;
-    character.qualities.novice = 1;
-    character.qualities.inspiration = 0;
-    system.setCharacterText("<p>You are starting on an exciting journey.</p>");
-};
+undum.game.init = function (character, system) {
+    character.qualities.churroNormal = 0;
+    character.qualities.churroNormalChocolate = 0;
+    character.qualities.churroLazoNormal = 0;
+    character.qualities.churroLazoChocolate = 0;
+  
+    system.setCharacterText("<p>Listado de objetos que lleva encima:</p>");
+  };
